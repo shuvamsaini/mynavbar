@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background-image: url(./bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.navbackground {
+  display: flex;
+  height: 10%;
+  background-color: purple;
+  color: white;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.Home {
+  background-color: red;
+  height: fit-content;
+}
+
+.About {
+  background-color: blue;
+  height: fit-content;
+}
+
+.Services {
+  background-color: green;
+  height: fit-content;
+}
+
+.Contact {
+  background-color: orange;
+  height: fit-content;
+}
+
+.navbar {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin:auto 0;
+  border-radius: 5px;
+  transition: 1s ease-in-out;
+}
+
+.navbar:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+@media(max-width:500px){
+    .navbackground{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        height:40%;
+    }
+
+}
